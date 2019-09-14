@@ -1,0 +1,7 @@
+<div *ngIf="getMessages().length>0">
+    <table width="100%"> 
+        <tr *ngFor="let m of getMessages()">
+            <td>[{{m.date}}] [{{m.userName}}] {{m.messageText}}</td>
+        </tr>
+    </table>
+</div>

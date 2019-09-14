@@ -1,0 +1,14 @@
+<table width='100%' height='100%'>
+    <tr>
+        <td style="text-align: right">Chat Room Name</td>
+        <td style="text-align: left">      
+            <input #chatRoomField       
+                (keyup.enter)="setChatRoom(chatRoomField.value)"
+                (blur)="setChatRoom(chatRoomField.value)">
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: right"></td>
+        <td style="text-align: left"><button type="button" class="nav-item nav-link-edit" [routerLink]="['../viewRoom']">Enter Chat Room</button></td>
+    </tr>
+</table>

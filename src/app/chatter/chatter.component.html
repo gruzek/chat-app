@@ -1,0 +1,8 @@
+<table width='100%' height='100%'>
+        <tr>
+            <td style="text-align: left" width='80%'><input #messageField       
+                (keyup.enter)="setMessage(messageField.value)"
+                (blur)="setMessage(messageField.value)"></td>
+            <td style="text-align: right" width='100%'><button (click)="sendChat()" style="width: 100%;">Send Chat</button></td>
+        </tr>
+</table>
